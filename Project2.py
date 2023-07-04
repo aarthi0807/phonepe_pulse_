@@ -4,12 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 #setup mysql db connection and creating cursor object
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="remoteuser",
-  password="******",
-  database='phonepe_pulse'
-)
+mydb = mysql.connector.connect(**st.secrets["mysql"])
 
 cursor = mydb.cursor()
 
