@@ -5,10 +5,10 @@ import mysql.connector
 from mysql.connector.errors import Error
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="remoteuser",
+  host="*******",
+  user="******",
   password="******",
-  database='phonepe_pulse'
+  database='******'
 )
 
 cursor = mydb.cursor()
